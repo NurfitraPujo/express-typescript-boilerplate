@@ -42,6 +42,7 @@
         "body-parser",
         "compression",
         "winston",
+        "jest"
     ],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
