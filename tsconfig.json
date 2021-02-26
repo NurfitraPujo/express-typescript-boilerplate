@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["DOM", "ES2020"],
+    "allowJs": false,
+    "checkJs": false,
+    "jsx": "preserve",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist-tsc",
+    "rootDir": "./src",
+    "composite": true,
+    "tsBuildInfoFile": "./tsBuildInfoFile.json",
+    "noEmit": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+        "src/*": ["*"],
+        "types/*": [
+            "./@types/",
+            "../src/types/"]
+    },
+    "types": [
+        "node",
+        "express",
+        "body-parser",
+        "compression",
+        "winston",
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "allowUmdGlobalAccess": true,
+    "forceConsistentCasingInFileNames": true,
+      "pretty": true,
+      "traceResolution": true
+  },
+    "include": [
+        "./src/config/app.ts",
+        "./src/server.ts",
+        "./src/**/*.ts",
+        "./src/**/**/*.ts",
+        "./src/**/**/**/*.ts"
+    ],
+    "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

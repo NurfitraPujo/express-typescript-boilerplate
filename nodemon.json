@@ -1,0 +1,16 @@
+{
+    "verbose": true,
+    "watch": ["src"],
+    "ext": "ts",
+    "exec": "ts-node ./src/index.ts",
+    "env": {
+        "NODE_ENV": "development",
+        "ENETO_DB_LIMIT":"10",
+        "ENETO_DB_HOST":"localhost",
+        "ENETO_DB_USER":"root",
+        "ENETO_DB_PASSWORD":"password",
+        "ENETO_DB_DATABASE":"rest-resume-api",
+        "ENETO_PORT":"5000",
+        "PORT": "5000"
+    }
+}
